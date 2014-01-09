@@ -4,7 +4,7 @@
 (tool-bar-mode -1)                ;禁用工具栏
 (scroll-bar-mode -1)              ;禁用滚动条
 (ido-mode t)
-(backup-inhibited t)
+(setq backup-inhibited t)
 (fset 'yes-or-no-p 'y-or-n-p)     ;以 y/n代表 yes/no
 (global-font-lock-mode t)         ;语法高亮
 (transient-mark-mode 1)           ;标记高亮

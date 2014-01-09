@@ -1,4 +1,4 @@
-;;; ### Functin key ###
+;; ### Functin key ###
 (lazy-set-key
  '(
    ("<f6>" . lock-screen)                        
@@ -65,8 +65,8 @@
    ("s-e" . multi-term-next)               
    ("s-w" . multi-term-prev)               
    ("s-n" . multi-term)                    
-   ("s-x s-x" . multi-term-dedicated-toggle)
-   ("s-x s-z" . multi-term-dedicated-select)
+   ;("s-x s-x" . multi-term-dedicated-toggle)
+   ;("s-x s-z" . multi-term-dedicated-select)
    ))
 
 ;;; ### Rect ###

@@ -17,6 +17,7 @@
 (require 'highlight-parentheses)
 (require 'scroll-mode-line-mode)
 
+(require 'qml-mode)
 (require 'color-moccur)
 (require 'lazy-set-key)
 (require 'one-key)
@@ -27,6 +28,8 @@
 (require 'hualet-basic-window)
 
 (load-theme 'spolsky)
+(require 'init-misc)
+(require 'init-slime)
 (require 'init-auto-save)
 (require 'init-helm)
 (require 'init-time)
@@ -34,7 +37,6 @@
 (require 'init-tabbar)
 (require 'init-eldoc)
 (require 'init-flycheck)
-(require 'init-misc)
 (require 'init-keys)
 
 (provide 'init)
