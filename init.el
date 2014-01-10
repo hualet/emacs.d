@@ -1,23 +1,24 @@
 (setq el-get-resources '(auto-complete
-			 yasnippet
-			 highlight-parentheses
-			 undo-tree
-			 paredit
-			 color-moccur
-			 rect-mark
-			 helm
-			 browse-kill-ring
-			 flycheck
-             multi-term
-             dired-details
-             dired-details+
-			 ))
+                         yasnippet
+                         highlight-parentheses
+                         undo-tree
+                         color-moccur
+                         rect-mark
+                         helm
+                         browse-kill-ring
+                         flycheck
+                         multi-term
+                         dired-details
+                         dired-details+
+                         auto-complete-yasnippet))
 
 (require 'undo-tree)
+(require 'auto-complete-yasnippet)
 (require 'highlight-parentheses)
 (require 'scroll-mode-line-mode)
 
 (require 'qml-mode)
+(require 'paredit)
 (require 'color-moccur)
 (require 'lazy-set-key)
 (require 'one-key)

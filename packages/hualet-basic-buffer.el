@@ -1,4 +1,10 @@
 ;; Buffer Edit
+(defun indent-buffer ()
+  (interactive)
+  (indent-region (point-min) (point-max) nil)
+  (delete-trailing-whitespace)
+  (untabify (point-min) (point-max)))
+
 (defun open-newline-below (arg)
   (interactive "p")
   (end-of-line)

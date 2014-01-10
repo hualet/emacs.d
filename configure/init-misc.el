@@ -115,7 +115,7 @@
 (scroll-mode-line-mode 1)
 
 ;; linum-mode
-(add-hook 'prog-mode-hook 'linum-mode)
+(global-linum-mode)
 
 ;;;; ### Ctypes-auto-parse ###
 ;;;; --- 自动对 C 语言的类型定义识别并进行语法加亮

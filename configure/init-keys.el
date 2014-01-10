@@ -11,7 +11,7 @@
 
 ;;; ### Unset key ###
 (lazy-unset-key                         
- '("C-z" "C-q" "s-W" "s-z" "M-h" "C-\\"))
+ '("C-z" "C-q" "s-W" "s-z" "s-x" "s-c" "M-h" "C-\\"))
 
 
 ;;; ### Auto-complete ###
@@ -65,8 +65,8 @@
    ("s-e" . multi-term-next)               
    ("s-w" . multi-term-prev)               
    ("s-n" . multi-term)                    
-   ;("s-x s-x" . multi-term-dedicated-toggle)
-   ;("s-x s-z" . multi-term-dedicated-select)
+   ("s-x s-x" . multi-term-dedicated-toggle)
+   ("s-x s-z" . multi-term-dedicated-select)
    ))
 
 ;;; ### Rect ###
