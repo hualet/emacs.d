@@ -10,13 +10,18 @@
                          multi-term
                          dired-details
                          dired-details+
-                         auto-complete-yasnippet))
+                         auto-complete-yasnippet
+                         go-mode)
+      )
 
 (require 'undo-tree)
 (require 'auto-complete-yasnippet)
 (require 'highlight-parentheses)
 (require 'scroll-mode-line-mode)
 
+(require 'go-mode)
+(require 'go-eldoc)
+(require 'go-autocomplete)
 (require 'qml-mode)
 (require 'paredit)
 (require 'color-moccur)

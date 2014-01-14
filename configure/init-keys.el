@@ -5,8 +5,8 @@
    ("^" . dired-jump)                         
    ("<f11>" . fullscreen-toggle)                 
    ("M-2" . indent-buffer)                       
-   ("M-3" . flymake-goto-prev-error)    
-   ("M-4" . flymake-goto-next-error)    
+   ("M-3" . flycheck-previous-error)    
+   ("M-4" . flycheck-next-error)    
    ))
 
 ;;; ### Unset key ###
@@ -59,7 +59,6 @@
 (global-set-key (kbd "M-R") 'mc/mark-all-like-this-dwim)
 
 ;;; ### Multi-Term ###
-;;; --- 多标签式的shell
 (lazy-set-key
  '(
    ("s-e" . multi-term-next)               
@@ -70,7 +69,6 @@
    ))
 
 ;;; ### Rect ###
-;;; --- 矩形操作
 (lazy-set-key
  '(
    ("s-M" . rm-set-mark)                         ;矩形标记
@@ -293,6 +291,12 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Org-mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-c c") 'org-capture)
+
+;; Go
+(lazy-set-key
+ '(("C-c C-r" . go-remove-unused-imports)
+   ("C-c C-f" . gofmt))
+ go-mode-map)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browser Kill Ring ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "M-y") 'browse-kill-ring)

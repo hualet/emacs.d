@@ -42,6 +42,7 @@
 
 (delete-selection-mode 1)               ;像在其他环境下一样编辑region --hualet
 (add-to-list 'exec-path "/usr/local/bin/")
+(add-to-list 'exec-path "~/Golang/bin/")
 
 ;;; ### Coding ###
 ;;; --- 编码设置
