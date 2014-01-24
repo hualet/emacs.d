@@ -41,8 +41,12 @@
 (setq print-escape-newlines t)          ;显示字符窗中的换行符为 \n
 
 (delete-selection-mode 1)               ;像在其他环境下一样编辑region --hualet
+
+;; 环境变量
 (add-to-list 'exec-path "/usr/local/bin/")
 (add-to-list 'exec-path "~/Golang/bin/")
+(setenv "GOROOT" "/usr/local/Cellar/go/1.2/libexec")
+(setenv "GOPATH" "~/Golang/")
 
 ;;; ### Coding ###
 ;;; --- 编码设置
